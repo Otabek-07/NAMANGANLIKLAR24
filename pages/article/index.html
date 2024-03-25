@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./../../maen.css">
+    <title>Namanganliklar24</title>
+</head>
+<body>
+      <header class="bg-slate-100 h-20 py-5">
+           <div class="container">
+                 <nav class="flex justify-between items-center">
+                      <div class="flex items-center gap-20">
+                          <a href="#"><h1 class="text-[28px] font-bold text-blue-800">NAMANGANLIKLAR24</h1></a>
+                          <ul class="flex items-center gap-10 font-semibold text-blue-800 ">
+                             <li><a href="./../../index.html">Дом</a></li>
+                             <li><a href="./../list/index.html">Список</a></li>
+                             <li><a href="./../article/index.html">Статъя</a></li>
+                             <li><a href="./../contact/index.html">Контакт</a></li>
+                          </ul>
+                      </div>
+                      <div class="flex items-center gap-6">
+                          <button class="bg-white py-1 px-2 rounded-[5px]"><i class="bi bi-search"></i></button>
+                          <div class="relative inline-block text-left">
+
+                            <div>
+                              <button type="button"
+                                class="inline-flex w-full justify-center gap-x-1.5 rounded-[5px] bg-white px-3 py-2 text-sm font-semibold"
+                                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                 <div class="flex items-center gap-3 " onclick="toggelMenu()"><img src="./../../pablic/icons/iconrusbayroq.svg" alt="Rassiya">Ру</div>
+                              </button>
+                            </div>
+                
+                      
+                            <div id="subMenu"
+                              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg hidden ring-1 ring-black ring-opacity-5 focus:outline-none"
+                              role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                              <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                  id="menu-item-0">Qozog'iston</a>
+                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                  id="menu-item-1">Qirg'iziston</a>
+                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                  id="menu-item-2">Tojikiston</a>
+                                <form method="POST" action="#" role="none">
+                                  <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem"
+                                    tabindex="-1" id="menu-item-3">Turkmaniston</button>
+                                </form>
+                              </div>
+                              
+                            </div>
+                          </div>
+                           <button class="flex items-center bg-blue-500 gap-2 p-3 rounded-[5px] text-[16px] font-medium text-white"><img src="./../../pablic/icons/icontelegram.png" alt="Telegram">Подписатся</button>
+                      </div>
+                 </nav>
+           </div>
+      </header>
+
+    <main>
+        <h1 class="text-center text-[30px]">Bu Artikil qism</h1>
+    </main>
+      <script>
+        let subMenu = document.getElementById("subMenu");
+         function toggelMenu(){
+            subMenu.classList.toggle("hidden")
+         }
+      </script>
+</body>
+</html>

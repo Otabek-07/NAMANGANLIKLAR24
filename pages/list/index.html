@@ -1,76 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./../../maen.css">
-    <title>Namanganliklar24</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./../../maen.css">
+  <title>Namanganliklar24</title>
 </head>
+
 <body>
-      <header class="bg-slate-100 h-20 py-5">
-           <div class="container">
-                 <nav class="flex justify-between items-center">
-                      <div class="flex items-center gap-20">
-                          <a href="#"><h1 class="text-[28px] font-bold text-blue-800">NAMANGANLIKLAR24</h1></a>
-                          <ul class="flex items-center gap-10 font-semibold text-blue-800 ">
-                             <li><a href="./../../index.html">Дом</a></li>
-                             <li><a href="./../list/index.html">Список</a></li>
-                             <li><a href="./../article/index.html">Статъя</a></li>
-                             <li><a href="./../contact/index.html">Контакт</a></li>
-                          </ul>
-                      </div>
-                      <div class="flex items-center gap-6">
-                          <button class="bg-white py-1 px-2 rounded-[5px]"><i class="bi bi-search"></i></button>
-                          <div class="relative inline-block text-left">
 
-                            <div>
-                              <button type="button"
-                                class="inline-flex w-full justify-center gap-x-1.5 rounded-[5px] bg-white px-3 py-2 text-sm font-semibold"
-                                id="menu-button" aria-expanded="true" aria-haspopup="true">
-                                 <div class="flex items-center gap-3 " onclick="toggelMenu()"><img src="./../../pablic/icons/iconrusbayroq.svg" alt="Rassiya">Ру</div>
-                              </button>
-                            </div>
-                
-                      
-                            <div id="subMenu"
-                              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg hidden ring-1 ring-black ring-opacity-5 focus:outline-none"
-                              role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                              <div class="py-1" role="none">
-                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                  id="menu-item-0">Qozog'iston</a>
-                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                  id="menu-item-1">Qirg'iziston</a>
-                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                  id="menu-item-2">Tojikiston</a>
-                                <form method="POST" action="#" role="none">
-                                  <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem"
-                                    tabindex="-1" id="menu-item-3">Turkmaniston</button>
-                                </form>
-                              </div>
-                              
-                            </div>
-                          </div>
-                           <button class="flex items-center bg-blue-500 gap-2 p-3 rounded-[5px] text-[16px] font-medium text-white"><img src="./../../pablic/icons/icontelegram.png" alt="Telegram">Подписатся</button>
-                      </div>
-                 </nav>
-           </div>
-      </header>
+  <!-- ========== header start======== -->
+  <header class="bg-slate-100 h-20 py-5">
+    <div class="container">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center gap-20">
+          <a href="#">
+            <h1 class="text-[28px] font-bold text-blue-800">NAMANGANLIKLAR24</h1>
+          </a>
+          <ul class="flex items-center gap-10 font-semibold text-blue-800 ">
+            <li><a href="./../../index.html">Дом</a></li>
+            <li><a href="./../list/index.html">Список</a></li>
+            <li><a href="./../article/index.html">Статъя</a></li>
+            <li><a href="./../contact/index.html">Контакт</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <button class="bg-white py-1 px-2 rounded-[5px]"><i class="bi bi-search"></i></button>
+          <div class="relative inline-block text-left">
+
+            <div>
+              <button type="button"
+                class="inline-flex w-full justify-center gap-x-1.5 rounded-[5px] bg-white px-3 py-2 text-sm font-semibold"
+                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <div class="flex items-center gap-3 " onclick="toggelMenu()"><img
+                    src="./../../pablic/icons/iconrusbayroq.svg" alt="Rassiya">Ру</div>
+              </button>
+            </div>
 
 
-    <main>
-        <h1 class="text-center text-[30px]">List qismi bu</h1>
-    </main>
+            <div id="subMenu"
+              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg hidden ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="py-1" role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Qozog'iston</a>
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Qirg'iziston</a>
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">Tojikiston</a>
+                <form method="POST" action="#" role="none">
+                  <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem"
+                    tabindex="-1" id="menu-item-3">Turkmaniston</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <button class="flex items-center bg-blue-500 gap-2 p-3 rounded-[5px] text-[16px] font-medium text-white"><img
+              src="./../../pablic/icons/icontelegram.png" alt="Telegram">Подписатся</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ============header end========= -->
 
 
-      <script>
-        let subMenu = document.getElementById("subMenu");
-         function toggelMenu(){
-            subMenu.classList.toggle("hidden")
-         }
-      </script>
+  <!-- ===============main start=========== -->
+  <main>
+
+    <section class="bg-slate-100  text-center">
+      <div class="container mx-auto">
+        <div class=" w-[1200px] h-[68px] bg-[#fff] flex justify-around items-center">
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Узбекистана</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Мир</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Экономика</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#295091]"><b>Политика</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Общество</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Технологии</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Спорт</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Культура</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Происшествия</b></h1>
+          <h1 class="fw-[500] leading-[22px] text-[19px] text-[#515151]"><b>Туризм</b></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-100 ">
+      <div class="container mx-auto">
+        <img class="w-[1220px] h-[99px] pt-[18px]" src="./images/Rectangle 3.jpg" alt="banner">
+      </div>
+    </section>
+
+    <section class="mt-[22px]">
+      <div class="container mx-auto">
+        <div class=" h-[133px] bg-[#F6F6F9]  ">
+          <div class="flex  gap-3 justify-around  items-center py-2  ">
+            <div class="wrap flex gap-3 items-center justify-around my-3">
+              <img src="./images/virus svg.svg" alt="virus">
+              <h1 class="fw-[500] text-[20px] leadimg-[23px] "><b>Коронавирус COVID-19 <br>
+                  в Узбекистане</b></h1>
+              <img class="ml-10" src="./images/stack.png" alt="stack">
+            </div>
+
+            <div class="wrap flex gap-3 justify-around items-center">
+              <img src="./images/sick.svg" alt="virus">
+              <h1 class="fw-[500] text-[20px] leadimg-[23px] "> <span
+                  class="fw-[500] text-[25px] text-[#DB0000]">Инфицированы <br></span><b>2753</b></h1>
+              <img class="ml-10" src="./images/stack white.png" alt="stack">
+            </div>
+
+            <div class="wrap flex gap-3 justify-around items-center">
+              <img src="./images/cil_smile.svg" alt="smile">
+              <h1 class="fw-[500] text-[20px] leadimg-[23px] "> <span
+                  class="fw-[500] text-[25px] text-[#05B135]">Выздоровели
+                  <br></span><b>2245</b></h1>
+              <img class="ml-10" src="./images/stack white.png" alt="stack">
+            </div>
+
+            <div class="wrap flex gap-3 justify-around items-center">
+              <img src="./images/erorr.svg" alt="erorr">
+              <h1 class="fw-[500] text-[20px] leadimg-[23px] "> <span class="fw-[500] text-[25px]">Умерли <br>
+                  12</h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto">
+        <h1 class="fw-[500] text-[20px] leading-[23px] pt-[16px]"><b>Политика</b></h1>
+        <div class="flex justify-between ">
+
+          <div class="wrapper">
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/forest.png" alt="forest">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/majlis.png" alt="majlis">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/avtobus.png" alt="street">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/forest.png" alt="forest">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/majlis.png" alt="majlis">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/avtobus.png" alt="forest">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/avtobus.png" alt="forest">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/forest.png" alt="forest">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap flex mt-[13px] gap-[19px]">
+              <img src="./images/majlis.png" alt="forest">
+              <div class="wrap">
+                <h1 class="fw-[500] text-[17px] leading-[20px] "><b>По факту прорыва Сардобинского водохранилища <br>
+                    возбуждено уголовное дело</b></h1>
+                <p class="w-[512px] h-[74px] pt-[8px]">После прорыва дамбы Сардобинского водохранилища возбуждено
+                  уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                <div class="flex pt-[12px] items-center ">
+                  <img src="./images/calendar.svg" alt="calendar">
+                  <p class="fw-[400] leading-[16px] text-[14px] text-[#7688A4]">11:31 / 15.05.2020</p>
+                </div>
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="wrapper w-[386px] h-[542px] bg-[#F6F6F9] rounded-[5px] p-[16px]">
+            <h1 class="fw-[500] text-[20px] leading-[23px] "><b>Cамые популярные новости</b></h1>
+            <p class="fw-[400] text-[17px] leading-[20px] pt-[6px]">По факту прорыва Сардобинского <br> водохранилища
+              <br>
+              возбуждено уголовное дело</p>
+            <p class="fw-[400] text-[14px] leading-[16px] text-[#7688A4] pt-[11px]">11:31 / 15.05.2020</p>
+            <div class="w-[346px] h-[4px] bg-[#E4E4E4] text-[#E4E4E4] mt-[14px]"></div>
+
+
+            <p class="fw-[400] text-[17px] leading-[20px] pt-[18px]">По факту прорыва Сардобинского <br> водохранилища
+              <br>
+              возбуждено уголовное дело</p>
+            <p class="fw-[400] text-[14px] leading-[16px] text-[#7688A4] pt-[11px]">11:31 / 15.05.2020</p>
+            <div class="w-[346px] h-[4px] bg-[#E4E4E4] text-[#E4E4E4] mt-[14px]"></div>
+
+            <p class="fw-[400] text-[17px] leading-[20px] pt-[18px]">По факту прорыва Сардобинского <br> водохранилища
+              <br>
+              возбуждено уголовное дело</p>
+            <p class="fw-[400] text-[14px] leading-[16px] text-[#7688A4] pt-[11px]">11:31 / 15.05.2020</p>
+            <div class="w-[346px] h-[4px] bg-[#E4E4E4] text-[#E4E4E4] mt-[14px]"></div>
+
+            <p class="fw-[400] text-[17px] leading-[20px] pt-[18px]">По факту прорыва Сардобинского <br> водохранилища
+              <br>
+              возбуждено уголовное дело</p>
+            <p class="fw-[400] text-[14px] leading-[16px] text-[#7688A4] pt-[11px]">11:31 / 15.05.2020</p>
+
+            <img class="mt-[50px] pt-[20px]" src="./images/usell rek.png" alt="ucell">
+         
+          </div>
+
+
+        </div>
+        <button class="w-[211px] h-[42px] bg-[#295093] rounded-[5px] ml-[280px] mt-[25px] text-[#fff] hover:bg-[#517eca] ">
+          <b>Больше новостей</b>
+        </button>
+      </div>
+    </section>
+
+         
+  </main>
+  <!-- ================maine= end============= -->
+
+
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    function toggelMenu() {
+      subMenu.classList.toggle("hidden")
+    }
+  </script>
 </body>
+
 </html>

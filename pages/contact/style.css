@@ -1,0 +1,4 @@
+.card{
+    box-shadow: rgba(126, 125, 125, 0.4) -5px 5px, rgba(158, 157, 158, 0.3) -10px 10px, rgba(136, 134, 135, 0.2) -15px 15px, rgba(131, 130, 130, 0.1) -20px 20px, rgba(129, 127, 129, 0.05) -25px 25px;
+    transition: all 0.5s;
+}
